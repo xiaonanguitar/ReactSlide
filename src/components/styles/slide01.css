@@ -1,0 +1,23 @@
+.mainpage {
+    background-color: #222222;
+    vertical-align: middle;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+}
+
+.mainpage_label {
+    color: #00d8ff;
+    display: block;
+    margin: 0 auto;
+    font-size: 20px;
+}
