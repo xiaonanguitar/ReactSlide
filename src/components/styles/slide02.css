@@ -1,0 +1,12 @@
+ul {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    list-style:circle inside;
+    font-size: 30px;
+    color: #fff;
+}
+
+ul li {
+    list-style-type:disc;
+}

@@ -14,7 +14,11 @@ class Slide01 extends Component {
         return (
             <div className="mainpage">
                 <ReactSVG path="../../images/logo.svg" className="logo"/>
-                <label className="mainpage_label" >ReactJS Foundamentals</label>
+                <a 
+                    href="https://facebook.github.io/react/" 
+                    className="mainpage_label" >
+                    ReactJS Foundamentals
+                </a>
             </div>
         )
     }

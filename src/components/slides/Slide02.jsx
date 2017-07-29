@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Table,Input,Modal,Spin,Button,Popconfirm  } from 'antd';
 import _ from 'lodash';
+import '../styles/slide02.css';
 
 class Slide02 extends Component {
 
@@ -10,7 +11,17 @@ class Slide02 extends Component {
 
     render() {
         return (
-            <h1>Slide02</h1>
+            <div className="mainpage">
+                <div className="mainContent">
+                    <ul>
+                        <li>Summary</li>
+                        <li>JSX</li>
+                        <li>Component</li>
+                        <li>Prop</li>
+                        <li>State</li>
+                    </ul>
+                </div>
+            </div>
         )
     }
 }
