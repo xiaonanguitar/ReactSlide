@@ -5,4 +5,4 @@
 * 开发环境: npm run dev (启动webpack-dev-server)
 * 开发构建:npm run build (启动本地构建)
 * 生产环境: npm run deploy 
-* 如何使用DevTools：http://www.jianshu.com/p/a2d4c1856560
+* http://slides.com/alexanderfarennikov/react-js-fundamentals/fullscreen#/17
