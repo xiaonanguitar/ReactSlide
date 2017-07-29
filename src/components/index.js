@@ -27,6 +27,7 @@ class App extends Component {
                     <IndexRoute component={Slide01}/>
                     <Route path="/slide01" component={Slide01}/>
                     <Route path="/slide02" component={Slide02}/>
+                    <Route path="/slide03" component={Slide03}/>
                 </Route>
             </Router>
         )
