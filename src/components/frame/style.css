@@ -6,6 +6,32 @@
     z-index: 1;
 }
 
+.navbar_left {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    width: 300px;
+    background-color: #fff;
+    transition: all 800ms;
+    z-index: 2;
+}
+
+.navbar_left.open {
+    left: 0;
+}
+.navbar_left.close {
+    left: -300px;
+}
+
+.leftbarbtn {
+    z-index: 5;
+    color: #00d8ff;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
 .header {
     position: absolute;
     right: 50px;

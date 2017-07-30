@@ -14,11 +14,11 @@ class Slide02 extends Component {
             <div className="mainpage">
                 <div className="mainContent">
                     <ul>
-                        <li>Summary</li>
+                        <li>React Summary</li>
                         <li>JSX</li>
-                        <li>Component</li>
-                        <li>Prop</li>
-                        <li>State</li>
+                        <li>Data Flow</li>
+                        <li>Component Comunication</li>
+                        <li>Component Life-Circle</li>
                     </ul>
                 </div>
             </div>
