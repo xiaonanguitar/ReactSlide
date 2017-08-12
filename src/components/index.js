@@ -6,6 +6,14 @@ import Frame from './frame';
 import Slide01 from './slides/Slide01.jsx';
 import Slide02 from './slides/Slide02.jsx';
 import Slide03 from './slides/Slide03.jsx';
+import Prop from './slides/Prop.jsx';
+import FocusOnView from './slides/FocusOnView.jsx';
+import VirtualDom from './slides/VirtualDom.jsx';
+import JSExtension from './slides/JSExtension.jsx';
+import FirstUIComponent from './slides/FirstUIComponent.jsx';
+import ParentsToChildren from './slides/ParentsToChildren.jsx';
+import LifeCircle from './slides/LifeCircle.jsx';
+import LifeCircleFlow from './slides/LifeCircleFlow.jsx';
 
 var ReactRouter = require('react-router');
 var Router = ReactRouter.Router;
@@ -28,6 +36,14 @@ class App extends Component {
                     <Route path="/slide01" component={Slide01}/>
                     <Route path="/slide02" component={Slide02}/>
                     <Route path="/slide03" component={Slide03}/>
+                    <Route path="/slide04" component={Prop}/>
+                    <Route path="/FocusOnView" component={FocusOnView}/>
+                    <Route path="/VirtualDom" component={VirtualDom}/>
+                    <Route path="/JSExtension" component={JSExtension}/>
+                    <Route path="/FirstUIComponent" component={FirstUIComponent}/>
+                    <Route path="/ParentsToChildren" component={ParentsToChildren}/>
+                    <Route path="/LifeCircle" component={LifeCircle}/>
+                    <Route path="/LifeCircleFlow" component={LifeCircleFlow}/>
                 </Route>
             </Router>
         )

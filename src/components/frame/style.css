@@ -11,7 +11,7 @@
     top: 0px;
     bottom: 0px;
     width: 300px;
-    background-color: #fff;
+    background-color: #333333;
     transition: all 800ms;
     z-index: 2;
 }

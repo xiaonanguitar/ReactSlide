@@ -14,9 +14,11 @@ class Frame extends Component {
                 <section>
                     <LeftNav/>
                 </section>
-                <section className="header">
-                   <Nav/>
-                </section>
+                {/*
+                    <section className="header">
+                    <Nav/>
+                    </section>
+                */}
                 <section className="container">
                     <ReactCSSTransitionGroup
                         transitionName="transitionWrapper"

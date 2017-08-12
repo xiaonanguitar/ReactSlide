@@ -2,12 +2,13 @@
     display: block;
     margin: 0 auto;
     width: 500px;
-    height: 500px;
+    height: 450px;
 }
 
 .mainpage_label {
-    color: #00d8ff;
+    color: #000;
     display: block;
     text-align: center;
-    font-size: 50px;
+    font-size: 100px;
+    margin: "100px 0 0 0"
 }

@@ -17,18 +17,29 @@ class Sider extends React.Component {
         defaultSelectedKeys={['1']}
         defaultOpenKeys={['sub1']}
         mode="inline"
+        theme="dark"
       >
-          <Menu.Item key="5"><Link to="/slide01">Home</Link></Menu.Item>
-          <SubMenu key="sub1" title={<span><Icon type="appstore" /><span>Outline</span></span>}>
-          <MenuItemGroup key="g1" title="Data Flow">
-            <Menu.Item key="1"><Link to="/slide02">Prop</Link></Menu.Item>
+          <Menu.Item key="5"><Link to="/slide01">首页</Link></Menu.Item>
+          <SubMenu key="sub1" title={<span><Icon type="appstore" /><span>React简介</span></span>}>
+            <Menu.Item key="7"><Link to="/FocusOnView">专注视图层</Link></Menu.Item>
+            <Menu.Item key="9"><Link to="/VirtualDom">Virtual DOM</Link></Menu.Item>
+            <Menu.Item key="8"><Link to="/JSExtension">JSX语法</Link></Menu.Item>
+          </SubMenu>
+          <SubMenu key="sub3" title={<span><Icon type="appstore" /><span>React组件</span></span>}>
+            <Menu.Item key="12"><Link to="/FirstUIComponent">我们的第一个组件</Link></Menu.Item>
+            <SubMenu key="sub4" title="组件间通信">
+                <Menu.Item key="10"><Link to="/ParentsToChildren">父子组件通信</Link></Menu.Item>
+                <Menu.Item key="13">跨级组件通信</Menu.Item>
+            </SubMenu>
+            <SubMenu key="sub5" title="生命周期">
+                <Menu.Item key="11"><Link to="/LifeCircle">理解React组件的生命周期</Link></Menu.Item>
+                <Menu.Item key="14"><Link to="/LifeCircleFlow">完整生命周期流程</Link></Menu.Item>
+            </SubMenu>
+          </SubMenu>
+          <SubMenu key="sub2" title={<span><Icon type="appstore" /><span>React数据流</span></span>}> 
+            <Menu.Item key="1"><Link to="/slide04">Prop</Link></Menu.Item>
             <Menu.Item key="2"><Link to="/slide03">State</Link></Menu.Item>
-          </MenuItemGroup>
-          <MenuItemGroup key="g2" title="Component">
-            <Menu.Item key="3">Comunication</Menu.Item>
-            <Menu.Item key="4">Life Circle</Menu.Item>
-          </MenuItemGroup>
-        </SubMenu>
+          </SubMenu>
       </Menu>
     );
   }

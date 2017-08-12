@@ -13,12 +13,15 @@ class Slide01 extends Component {
     render() {
         return (
             <div className="mainpage">
-                <ReactSVG path="../../images/logo.svg" className="logo"/>
-                <a 
-                    href="https://facebook.github.io/react/" 
-                    className="mainpage_label" >
-                    ReactJS Foundamentals
-                </a>
+                <div style={{padding: "50px 0"}}>
+                    {/*<ReactSVG path="../../images/logo.svg" className="logo"/>*/}
+                    <img className="logo" src="../../images/reactjs.png"/>
+                    <a 
+                        href="https://facebook.github.io/react/" 
+                        className="mainpage_label" >
+                        ReactJS Foundamentals
+                    </a>
+                </div>
             </div>
         )
     }
