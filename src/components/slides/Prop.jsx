@@ -1,27 +1,49 @@
 import React, { Component } from 'react';
 import { Table,Input,Modal,Spin,Button,Popconfirm  } from 'antd';
 import _ from 'lodash';
+import MessageBox from './demo/Props/index.jsx';
 import '../styles/slide02.css';
 
 class Prop extends Component {
 
     constructor(props,context) {
         super(props)
+        this.handler = this.handler.bind(this)
+        this.state = {
+            visable: false
+        }
+    }
+
+    handler() {
+        this.setState({
+            visable: true
+        })
     }
 
     render() {
         return (
             <div className="mainpage">
                 <div className="mainContent">
-                    <div className="title"><span>Prop</span></div>
                     <ul>
                         <li>
-                            <span>Passed down to component from parent component and represents data for the component</span>
+                            <span>Props的传递是单向的，只能从父组件传给子组件</span>
                         </li>
                         <li>
-                            <span>accessed via this.props</span>
+                            <span>组件内通过this.props来获取属性内容</span>
+                        </li>
+                        <li>
+                            <span>React提供getDefaultProps来设置默认属性值</span>
+                        </li>
+                        <li>
+                            <span>React提供protype来进行类型校验</span>
                         </li>
                     </ul>
+                    <div style={{textAlign:"center",margin:"20px"}}>
+                        <Button type="primary" onClick={()=>this.handler()}>DEMO</Button>
+                    </div>
+                    <div style={{display:this.state.visable?"block":"none"}}>
+                        <MessageBox/>
+                    </div>
                 </div>
             </div>
         )

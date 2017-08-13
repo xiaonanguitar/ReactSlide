@@ -13,7 +13,7 @@ class Sider extends React.Component {
     return (
       <Menu
         onClick={this.handleClick}
-        style={{ width: "100%",margin: "50px 0" }}
+        style={{ width: "100%",margin: "100px 0 50px 0" }}
         defaultSelectedKeys={['1']}
         defaultOpenKeys={['sub1']}
         mode="inline"
@@ -65,6 +65,9 @@ class LeftNav extends Component {
                     <i className="fa fa-bars fa-3x"></i>
                 </div>
                 <div className={this.state.openleft?"navbar_left open":"navbar_left close"}>
+                    <span className="photo">
+
+                    </span>
                     <Sider/>
                 </div>
             </div>

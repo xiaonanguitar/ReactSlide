@@ -73,3 +73,15 @@
     margin-left: -100%;
     opacity: 0.01;
 }
+
+.photo {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: url(../../images/photo.png);
+    border: 3px solid #fff;
+    border-radius: 40px;
+}
