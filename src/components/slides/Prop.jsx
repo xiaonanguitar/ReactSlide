@@ -16,7 +16,7 @@ class Prop extends Component {
 
     handler() {
         this.setState({
-            visable: true
+            visable: !this.state.visable
         })
     }
 
@@ -35,7 +35,11 @@ class Prop extends Component {
                             <span>React提供getDefaultProps来设置默认属性值</span>
                         </li>
                         <li>
-                            <span>React提供protype来进行类型校验</span>
+                            <span>
+                                <a href="https://facebook.github.io/react/docs/typechecking-with-proptypes.html">
+                                    React提供protype来进行类型校验
+                                </a>
+                            </span>
                         </li>
                     </ul>
                     <div style={{textAlign:"center",margin:"20px"}}>
