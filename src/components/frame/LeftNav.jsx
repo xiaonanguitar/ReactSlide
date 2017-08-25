@@ -58,6 +58,7 @@ class LeftNav extends Component {
         this.setState({
             openleft: !this.state.openleft
         })
+        this.props.animation(!this.state.openleft)
     }
     render() {
         return (

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Table, Input, Modal, Spin, Button, Popconfirm } from 'antd';
 import _ from 'lodash';
 import ReactSVG from 'react-svg';
+var ReactRouter = require('react-router');
+var Link = ReactRouter.Link;
 import '../styles/slide01.css';
 
 class Slide01 extends Component {
@@ -21,6 +23,7 @@ class Slide01 extends Component {
                         className="mainpage_label" >
                         ReactJS Foundamentals
                     </a>
+                    <span className="getStart"><Link to="/FocusOnView">Get Started</Link></span>
                 </div>
             </div>
         )

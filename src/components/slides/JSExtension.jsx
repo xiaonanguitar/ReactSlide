@@ -19,6 +19,7 @@ class JSExtension extends Component {
                         </li>
                         <li>
                             <span>不像常规的JS那样可以被浏览器直接解释执行，JSX需要在运行时需要有单独的编译器将其编译转换成常规JS再被执行</span>
+                            <a style={{display:"inline-block",margin:"0 10px"}} href="http://babeljs.io">Babel Transformer</a>
                         </li>
                         <li>
                             <span>因为JSX是JavaScript，所以我们不能使用JS的保留字，比如Class</span>

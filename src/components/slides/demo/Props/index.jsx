@@ -27,6 +27,7 @@ SubMessages.propTypes = {
     msg: PropTypes.array.isRequired
 }
 
+
 class MessageBox extends Component {
 
     constructor(props,context) {

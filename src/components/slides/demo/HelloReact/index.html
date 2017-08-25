@@ -10,8 +10,15 @@
     <body>
         <div id="root"></div>
         <script type="text/babel">
-            var app = <h1>Hello React!</h1>
-            ReactDOM.render(app,document.getElementById('root'));
+            var App = React.createClass({
+                alert() {
+                    alert("HelloWorld!")
+                },
+                render() {
+                    return (<div onClick={()=>this.alert()}>HelloWorld!</div>)
+                }
+            })
+            ReactDOM.render(<App/>,document.getElementById('root'));
         </script>
     </body>
 </html>
