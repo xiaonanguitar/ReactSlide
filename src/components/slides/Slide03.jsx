@@ -26,14 +26,14 @@ class Slide03 extends React.Component {
 
   render() {
     const items = this.state.items.map((item, i) => (
-      <div key={item} onClick={() => this.handleRemove(i)}>
+      <div key={item} style={{fontSize:"14px",fontWeight:"bold"}} onClick={() => this.handleRemove(i)}>
         {item}
       </div>
     ));
 
     return (
       <div>
-        <button onClick={this.handleAdd}>Add Item</button>
+        <Button onClick={this.handleAdd}>Add Item</Button>
         <ReactCSSTransitionGroup
           transitionName="example"
           transitionEnterTimeout={500}

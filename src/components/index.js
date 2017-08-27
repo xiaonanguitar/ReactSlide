@@ -7,6 +7,7 @@ import Slide01 from './slides/Slide01.jsx';
 import Slide02 from './slides/Slide02.jsx';
 import Slide03 from './slides/Slide03.jsx';
 import Prop from './slides/Prop.jsx';
+import State from './slides/State.jsx';
 import FocusOnView from './slides/FocusOnView.jsx';
 import VirtualDom from './slides/VirtualDom.jsx';
 import JSExtension from './slides/JSExtension.jsx';
@@ -37,6 +38,7 @@ class App extends Component {
                     <Route path="/slide01" component={Slide01}/>
                     <Route path="/slide02" component={Slide02}/>
                     <Route path="/slide03" component={Slide03}/>
+                    <Route path="/state" component={State}/>
                     <Route path="/slide04" component={Prop}/>
                     <Route path="/FocusOnView" component={FocusOnView}/>
                     <Route path="/VirtualDom" component={VirtualDom}/>
