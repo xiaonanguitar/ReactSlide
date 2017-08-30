@@ -92,7 +92,7 @@
     display: block;
     width: 80px;
     height: 80px;
-    background: url(../../images/reactlogfromtwiter.png);
+    background: url(/images/reactlogfromtwiter.png);
     border: 1px solid #fff;
     border-radius: 40px;
     background-size: 80px;

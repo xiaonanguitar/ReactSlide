@@ -33,7 +33,7 @@ class FCComunication extends Component {
     componentWillMount() {
         console.log("componentWillMount")
         let _this = this
-        fetch('/components/slides/demo/LifeCircleDemo/data.json')
+        fetch('/data/data.json')
         .then(res=>res.json())
         .then(res=>{
             setTimeout(function(){
