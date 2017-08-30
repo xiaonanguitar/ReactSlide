@@ -36,7 +36,7 @@ class LifeCircleFlow extends Component {
 
     render() {
         return (
-            <div className="mainpage">
+            <div>
                 <div className="mainContent">
                     <img style={{width:"60%"}} className="logo" src="../../images/lifeCircle.png"/>
                     <span style={demoBtn}>

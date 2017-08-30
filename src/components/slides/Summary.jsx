@@ -12,7 +12,7 @@ class Summary extends Component {
 
     render() {
         return (
-            <div className="mainpage">
+            <div>
                 <div className="mainContent" style={{backgroundColor:"#DE5044"}}>
                     <div className="title">Thank You!</div>
                     <div style={{fontSize:"35px",textAlign:"center"}}>Blog:&nbsp;<a href="xxx">xxxx</a></div>

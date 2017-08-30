@@ -53,7 +53,7 @@ class ParentsToChildren extends Component {
 
     render() {
         return (
-            <div className="mainpage">
+            <div>
                 <div className="mainContent">
                     <ul>
                         <li>

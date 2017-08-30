@@ -45,7 +45,7 @@ class FocusOnView extends Component {
     render() {
         let src = this.state.tag === "angular"? "../../images/angularDireactive.png":"../../images/reactWidget.png"
         return (
-            <div className="mainpage">
+            <div>
                 <div className="mainContent">
                     <ul>
                         <li>

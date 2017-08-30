@@ -28,10 +28,10 @@
 }
 
 .navbar_left.open {
-    transform: translateX(0);
+    left: 0px;
 }
 .navbar_left.close {
-    transform: translateX(-300px);
+    left: -300px;
 }
 
 .leftbarbtn {

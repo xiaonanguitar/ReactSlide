@@ -23,16 +23,18 @@ class Frame extends Component {
         return (
             <div className="frame">
                 <LeftNav animation={this.animation}/>
-                <div style={{transform:this.state.leftOpen?"translateX(300px)":"translateX(0)", transition:"all 800ms"}}>
-                    <ReactCSSTransitionGroup
-                        transitionName="transitionWrapper"
-                        transitionEnterTimeout={1000}
-                        transitionLeaveTimeout={1000}>
-                        {React.cloneElement(this.props.children, {
-                            key: this.props.location.pathname
-                        })}
-                    </ReactCSSTransitionGroup>
-                </div>
+                <ReactCSSTransitionGroup
+                    transitionName="transitionWrapper"
+                    transitionEnterTimeout={1000}
+                    transitionLeaveTimeout={1000}>
+                    <div className="mainPage" style={{paddingLeft:this.state.leftOpen?"300px":"0px", transition:"all 800ms"}}>
+                        {
+                            React.cloneElement(this.props.children, {
+                                key: this.props.location.pathname
+                            })
+                        }
+                    </div>
+                </ReactCSSTransitionGroup>
                 {/*
                     <section className="header">
                     <Nav/>

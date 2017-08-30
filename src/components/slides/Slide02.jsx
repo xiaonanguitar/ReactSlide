@@ -11,16 +11,14 @@ class Slide02 extends Component {
 
     render() {
         return (
-            <div className="mainpage">
-                <div className="mainContent">
-                    <ul>
-                        <li>React Summary</li>
-                        <li>JSX</li>
-                        <li>Data Flow</li>
-                        <li>Component Comunication</li>
-                        <li>Component Life-Circle</li>
-                    </ul>
-                </div>
+            <div className="mainContent">
+                <ul>
+                    <li>React Summary</li>
+                    <li>JSX</li>
+                    <li>Data Flow</li>
+                    <li>Component Comunication</li>
+                    <li>Component Life-Circle</li>
+                </ul>
             </div>
         )
     }
