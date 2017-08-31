@@ -16,6 +16,7 @@ import ParentsToChildren from './slides/ParentsToChildren.jsx';
 import LifeCircle from './slides/LifeCircle.jsx';
 import LifeCircleFlow from './slides/LifeCircleFlow.jsx';
 import Summary from './slides/Summary.jsx';
+import Gallery from './slides/demo/Gallery/index.jsx';
 
 var ReactRouter = require('react-router');
 var Router = ReactRouter.Router;
@@ -48,6 +49,7 @@ class App extends Component {
                     <Route path="/LifeCircle" component={LifeCircle}/>
                     <Route path="/LifeCircleFlow" component={LifeCircleFlow}/>
                     <Route path="/Summary" component={Summary}/>
+                    <Route path="/Gallery" component={Gallery}/>
                 </Route>
             </Router>
         )

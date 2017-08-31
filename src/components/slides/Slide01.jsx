@@ -22,7 +22,7 @@ class Slide01 extends Component {
                     className="mainpage_label" >
                     ReactJS Foundamentals
                 </a>
-                <span className="getStart"><Link to="/FocusOnView">Get Started</Link></span>
+                <span className="getStart"><Link to="/Gallery">Get Started</Link></span>
             </div>
         )
     }

@@ -36,9 +36,15 @@ module.exports = {
         }, {
             test: /\.html$/,
             loader: 'html?attrs=img:src img:srcset'
+        },  {
+            test: /\.json$/,
+            loader: 'json-loader'
         }, {
             test: /\.css$/,
-            loaders: ['style','css']
+            loaders: ['style','css','autoprefixer']
+        }, {
+            test: /\.scss/,
+            loader: 'style-loader!css-loader!autoprefixer-loader?{browsers:["last 2 version"]}!sass-loader?outputStyle=expanded'
         }]
     },
     devServer: {
