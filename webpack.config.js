@@ -24,7 +24,7 @@ module.exports = {
     },
     module: {
         loaders: [{
-            test: /\.(png|jpg|jpeg|gif)$/,
+            test: /\.(png|jpg|jpeg|gif|woff|woff2|eot|ttf|svg)$/,
             loader: 'url?limit=10000&name=images/[name].[ext]'
         }, {
             test: /\.less$/,
