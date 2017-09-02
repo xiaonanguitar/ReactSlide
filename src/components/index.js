@@ -17,6 +17,7 @@ import LifeCircle from './slides/LifeCircle.jsx';
 import LifeCircleFlow from './slides/LifeCircleFlow.jsx';
 import Summary from './slides/Summary.jsx';
 import Gallery from './slides/demo/Gallery/index.jsx';
+import CodeSplit from './slides/demo/CodeSplit/index.jsx';
 
 var ReactRouter = require('react-router');
 var Router = ReactRouter.Router;
@@ -50,6 +51,7 @@ class App extends Component {
                     <Route path="/LifeCircleFlow" component={LifeCircleFlow}/>
                     <Route path="/Summary" component={Summary}/>
                     <Route path="/Gallery" component={Gallery}/>
+                    <Route path="/CodeSplit" component={CodeSplit}/>
                 </Route>
             </Router>
         )

@@ -32,7 +32,11 @@ module.exports = {
         }, {
             test: /\.js[x]?$/,
             exclude: /node_modules/,
-            loader: 'babel?presets[]=es2015&presets[]=react'
+            loader: 'babel-loader',
+            query: {
+                presets: ['react', 'es2015'],
+                plugins: ['transform-class-properties']
+            }
         }, {
             test: /\.html$/,
             loader: 'html?attrs=img:src img:srcset'
