@@ -7,6 +7,9 @@ var config = require('./webpack.config.js');
 const app = express();  
 
 app.use(express.static(__dirname + '/build'));  
+app.use(express.static(__dirname + '/src/components/slides/demo')); 
+app.use(express.static(__dirname + '/src')); 
+
 app.get('/', function response(req, res) {  
   res.sendFile(path.join(__dirname, './build/index.html'));
 });

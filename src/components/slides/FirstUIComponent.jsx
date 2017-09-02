@@ -59,7 +59,7 @@ class FirstUIComponent extends Component {
                     >
                     <h1>第一个组件</h1>
                     <div>
-                        <iframe src="./components/slides/demo/HelloReact/index.html" style={{float:"left",width:"50%",display:"inline-block"}}></iframe>
+                        <iframe src="./HelloReact/index.html" style={{float:"left",width:"50%",display:"inline-block"}}></iframe>
                         <div style={{display:"inline-block",width:"50%",padding:"10px",fontSize:"16px"}}>
                             <span>代码一共用了三个库： react.js 、react-dom.js 和 Browser.js ，它们必须首先加载。其中，react.js 是 React 的核心库，react-dom.js 是提供与 DOM 相关的功能，Browser.js 的作用是将 JSX 语法转为 JavaScript 语法</span>
                         </div>
