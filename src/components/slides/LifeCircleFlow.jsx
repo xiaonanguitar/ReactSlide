@@ -4,6 +4,16 @@ import _ from 'lodash';
 import LifeCircleDemo from './demo/LifeCircleDemo/index.jsx';
 import '../styles/slide02.css';
 
+import { StyleSheet, css } from 'aphrodite';
+import { rotateRightIn } from 'react-magic';
+
+const styles = StyleSheet.create({
+    magic: {
+        animationName: rotateRightIn,
+        animationDuration: '1s'
+    }
+});
+
 class LifeCircleFlow extends Component {
 
     constructor(props,context) {
@@ -36,7 +46,7 @@ class LifeCircleFlow extends Component {
 
     render() {
         return (
-            <div>
+            <div className={css(styles.magic)}>
                 <div className="mainContent">
                     <img style={{width:"60%"}} className="logo" src="../../images/lifeCircle.png"/>
                     <span style={demoBtn}>

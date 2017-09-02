@@ -4,6 +4,16 @@ import _ from 'lodash';
 import MessageBox from './demo/Props/index.jsx';
 import '../styles/slide02.css';
 
+import { StyleSheet, css } from 'aphrodite';
+import { holeIn } from 'react-magic';
+
+const styles = StyleSheet.create({
+    magic: {
+        animationName: holeIn,
+        animationDuration: '1s'
+    }
+});
+
 class Prop extends Component {
 
     constructor(props,context) {
@@ -22,7 +32,7 @@ class Prop extends Component {
 
     render() {
         return (
-            <div>
+            <div className={css(styles.magic)}>
                 <div className="mainContent">
                     <ul>
                         <li>

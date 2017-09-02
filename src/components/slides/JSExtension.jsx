@@ -3,6 +3,16 @@ import { Table,Input,Modal,Spin,Button,Popconfirm  } from 'antd';
 import _ from 'lodash';
 import '../styles/slide02.css';
 
+import { StyleSheet, css } from 'aphrodite';
+import { twisterInUp } from 'react-magic';
+
+const styles = StyleSheet.create({
+    magic: {
+        animationName: twisterInUp,
+        animationDuration: '1s'
+    }
+});
+
 class JSExtension extends Component {
 
     constructor(props,context) {
@@ -11,7 +21,7 @@ class JSExtension extends Component {
 
     render() {
         return (
-            <div>
+            <div className={css(styles.magic)}>
                 <div className="mainContent">
                     <ul>
                         <li>

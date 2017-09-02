@@ -6,6 +6,16 @@ var ReactRouter = require('react-router');
 var Link = ReactRouter.Link;
 import '../styles/slide01.css';
 
+import { StyleSheet, css } from 'aphrodite';
+import { spaceInUp } from 'react-magic';
+
+const styles = StyleSheet.create({
+    magic: {
+        animationName: spaceInUp,
+        animationDuration: '1s'
+    }
+});
+
 class Slide01 extends Component {
 
     constructor(props, context) {
@@ -14,7 +24,7 @@ class Slide01 extends Component {
 
     render() {
         return (
-            <div>
+            <div className={css(styles.magic)}>
                 {/*<ReactSVG path="../../images/logo.svg" className="logo"/>*/}
                 <img className="logo" src="../../images/reactjs.png" />
                 <a

@@ -4,6 +4,16 @@ import _ from 'lodash';
 import FCComunication from './demo/FCComunication/index.jsx';
 import '../styles/slide02.css';
 
+import { StyleSheet, css } from 'aphrodite';
+import { rotateLeftIn } from 'react-magic';
+
+const styles = StyleSheet.create({
+    magic: {
+        animationName: rotateLeftIn,
+        animationDuration: '1s'
+    }
+});
+
 class ParentsToChildren extends Component {
 
     constructor(props,context) {
@@ -53,7 +63,7 @@ class ParentsToChildren extends Component {
 
     render() {
         return (
-            <div>
+            <div className={css(styles.magic)}>
                 <div className="mainContent">
                     <ul>
                         <li>

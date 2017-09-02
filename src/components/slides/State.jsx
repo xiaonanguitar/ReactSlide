@@ -5,6 +5,16 @@ import Todolist from './Slide03.jsx';
 import Clock from './demo/Clock/index.jsx';
 import '../styles/slide02.css';
 
+import { StyleSheet, css } from 'aphrodite';
+import { puffIn } from 'react-magic';
+
+const styles = StyleSheet.create({
+    magic: {
+        animationName: puffIn,
+        animationDuration: '1s'
+    }
+});
+
 class State extends Component {
 
     constructor(props,context) {
@@ -33,7 +43,7 @@ class State extends Component {
 
     render() {
         return (
-            <div>
+            <div className={css(styles.magic)}>
                 <div className="mainContent">
                     <ul>
                         <li>

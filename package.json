@@ -12,6 +12,7 @@
   "author": "huguozhi",
   "license": "MIT",
   "devDependencies": {
+    "aphrodite": "^1.2.3",
     "autoprefixer-loader": "^3.2.0",
     "babel-core": "^6.7.4",
     "babel-loader": "^6.4.1",
@@ -35,6 +36,7 @@
     "react": "^15.3.2",
     "react-css-modules": "^4.0.3",
     "react-dom": "^15.4.0",
+    "react-magic": "^0.2.3",
     "react-magic-effects": "^0.1.0",
     "react-router": "^3.0.0",
     "redux-devtools": "^3.3.2",

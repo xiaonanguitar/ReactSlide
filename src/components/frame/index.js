@@ -4,6 +4,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 import Nav from './Nav.jsx';
 import LeftNav from './LeftNav.jsx';
 import './style.css';
+
 class Frame extends Component {
     constructor(props) {
         super(props)
@@ -23,18 +24,13 @@ class Frame extends Component {
         return (
             <div className="frame">
                 <LeftNav animation={this.animation}/>
-                <ReactCSSTransitionGroup
-                    transitionName="transitionWrapper"
-                    transitionEnterTimeout={1000}
-                    transitionLeaveTimeout={1000}>
-                    <div className="mainPage" style={{paddingLeft:this.state.leftOpen?"300px":"0px", transition:"all 800ms"}}>
-                        {
-                            React.cloneElement(this.props.children, {
-                                key: this.props.location.pathname
-                            })
-                        }
-                    </div>
-                </ReactCSSTransitionGroup>
+                <div className="mainPage" style={{paddingLeft:this.state.leftOpen?"300px":"0px", transition:"all 800ms"}}>
+                    {
+                        React.cloneElement(this.props.children, {
+                            key: this.props.location.pathname
+                        })
+                    }
+                </div>
                 {/*
                     <section className="header">
                     <Nav/>

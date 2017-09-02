@@ -3,6 +3,16 @@ import { Table,Input,Modal,Spin,Button,Popconfirm  } from 'antd';
 import _ from 'lodash';
 import '../styles/slide02.css';
 
+import { StyleSheet, css } from 'aphrodite';
+import { twisterInDown } from 'react-magic';
+
+const styles = StyleSheet.create({
+    magic: {
+        animationName: twisterInDown,
+        animationDuration: '1s'
+    }
+});
+
 class FocusOnView extends Component {
 
     constructor(props,context) {
@@ -45,7 +55,7 @@ class FocusOnView extends Component {
     render() {
         let src = this.state.tag === "angular"? "../../images/angularDireactive.png":"../../images/reactWidget.png"
         return (
-            <div>
+            <div className={css(styles.magic)}>
                 <div className="mainContent">
                     <ul>
                         <li>

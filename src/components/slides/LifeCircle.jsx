@@ -5,6 +5,16 @@ var ReactRouter = require('react-router');
 var Link = ReactRouter.Link;
 import '../styles/slide02.css';
 
+import { StyleSheet, css } from 'aphrodite';
+import { vanishIn } from 'react-magic';
+
+const styles = StyleSheet.create({
+    magic: {
+        animationName: vanishIn,
+        animationDuration: '1s'
+    }
+});
+
 class LifeCircle extends Component {
 
     constructor(props,context) {
@@ -13,7 +23,7 @@ class LifeCircle extends Component {
 
     render() {
         return (
-            <div>
+            <div className={css(styles.magic)}>
                 <div className="mainContent">
                     <ul>
                         <li>
