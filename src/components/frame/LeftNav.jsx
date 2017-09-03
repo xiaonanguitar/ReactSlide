@@ -49,24 +49,11 @@ class Sider extends React.Component {
 class LeftNav extends Component {
     constructor(props) {
         super(props)
-        this.state = {
-            openleft: false
-        }
-        this.dock = this.dock.bind(this);
-    }
-    dock() {
-        this.setState({
-            openleft: !this.state.openleft
-        })
-        this.props.animation(!this.state.openleft)
     }
     render() {
         return (
             <div>
-                <div className="leftbarbtn" onClick={()=>this.dock()}>
-                    <i className="fa fa-bars fa-3x"></i>
-                </div>
-                <div className={this.state.openleft?"navbar_left open":"navbar_left close"}>
+                <div className={this.props.leftOpen?"navbar_left open":"navbar_left close"}>
                     <div style={{height:"100px"}}>
                         <span className="photo"></span>
                     </div>
