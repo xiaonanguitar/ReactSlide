@@ -72,7 +72,7 @@ class LeftNav extends Component {
                     */}
                     <figure>
                         <img 
-                            src="/images/fixed.png" 
+                            src={this.state.fixed?"/images/Removefixed.png":"/images/fixed.png"} 
                             onClick={()=>this.setFixed(!this.props.leftOpen)}/>
                     </figure>
                     <Sider/>
