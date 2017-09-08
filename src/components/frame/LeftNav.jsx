@@ -49,14 +49,32 @@ class Sider extends React.Component {
 class LeftNav extends Component {
     constructor(props) {
         super(props)
+        this.state = {
+            fixed: false
+        }
     }
+
+    setFixed = (fixed) => {
+        this.props.dock(fixed)
+        this.setState({
+            fixed: fixed
+        })
+    }
+
     render() {
         return (
             <div>
-                <div className={this.props.leftOpen?"navbar_left open":"navbar_left close"}>
-                    <div style={{height:"100px"}}>
-                        <span className="photo"></span>
-                    </div>
+                <div className={this.state.fixed?"navbar_left open":"navbar_left"}>
+                    {/*
+                        <div style={{height:"100px"}}>
+                            <span className="photo"></span>
+                        </div>
+                    */}
+                    <figure>
+                        <img 
+                            src="/images/fixed.png" 
+                            onClick={()=>this.setFixed(!this.props.leftOpen)}/>
+                    </figure>
                     <Sider/>
                 </div>
             </div>

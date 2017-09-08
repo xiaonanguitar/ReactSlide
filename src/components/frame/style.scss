@@ -25,13 +25,19 @@
     transition: all 800ms;
     overflow-y: scroll;
     z-index: 2;
+    left: -300px;
+    &:hover {
+        left: 0px;
+    }
+}
+
+
+.navbar_left.close {
+    left: -300px;
 }
 
 .navbar_left.open {
     left: 0px;
-}
-.navbar_left.close {
-    left: -300px;
 }
 
 .leftbarbtn {
@@ -41,6 +47,9 @@
     left: 10px;
     top: 10px;
     cursor: pointer;
+    &:hover  + div .navbar_left {
+        left: 0px;
+    }
 }
 
 .header {
@@ -96,6 +105,19 @@
     border: 1px solid #fff;
     border-radius: 40px;
     background-size: 80px;
+}
+
+figure {
+    position: relative;
+    height: 100px;
+}
+
+figure img {
+    position: absolute;
+    width: 16px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
 }
 
 
