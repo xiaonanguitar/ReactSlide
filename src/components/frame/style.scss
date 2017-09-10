@@ -1,3 +1,4 @@
+
 .frame {
     overflow-x: hidden;
     background-color: #ddd;
@@ -23,9 +24,10 @@
     width: 300px;
     background-color: #333333;
     transition: all 800ms;
-    overflow-y: scroll;
+    overflow-y: auto;
     z-index: 2;
     left: -300px;
+    box-shadow: 5px 0px 5px #9a9a9a;
     &:hover {
         left: 0px;
     }
@@ -38,6 +40,12 @@
 
 .navbar_left.open {
     left: 0px;
+    &.fixed {
+        border: groove;
+        border-left-width: 0;
+        border-top-width: 0;
+        border-bottom-width: 0;
+    }
 }
 
 .leftbarbtn {

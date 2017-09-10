@@ -25,13 +25,10 @@ class VirtualDom extends Component {
                 <div className="mainContent">
                     <ul>
                         <li>
-                            <span>传统的开发模式需要手动操作DOM，代价昂贵，性能消耗大，代码极难维护</span>
+                            <span>Web页面是由一个个HTML元素嵌套组合而成的。当使用JavaScript来描述这些元素时，这些元素可以简单地被表示成纯粹的JSON对象</span>
                         </li>
                         <li>
                             <span>React把真实Dom树转换成JavaScript对象树，也就是Virtual DOM Tree</span>
-                        </li>
-                        <li>
-                            <span>每次数据更新后，由Diff算法对比上一次的Virtual Dom，只针对发生变化的部分重新渲染</span>
                         </li>
                     </ul>
                 </div>

@@ -21,7 +21,7 @@ class Sider extends React.Component {
       >
           <Menu.Item key="5"><Link to="/slide01">首页</Link></Menu.Item>
           <SubMenu key="sub1" title={<span><Icon type="appstore" /><span>React简介</span></span>}>
-            <Menu.Item key="7"><Link to="/FocusOnView">专注视图层</Link></Menu.Item>
+            <Menu.Item key="7"><Link to="/FocusOnView">初识React</Link></Menu.Item>
             <Menu.Item key="9"><Link to="/VirtualDom">Virtual DOM</Link></Menu.Item>
             <Menu.Item key="8"><Link to="/JSExtension">JSX语法</Link></Menu.Item>
           </SubMenu>
@@ -64,7 +64,7 @@ class LeftNav extends Component {
     render() {
         return (
             <div>
-                <div className={this.state.fixed?"navbar_left open":"navbar_left"}>
+                <div className={this.state.fixed?"navbar_left open fixed":"navbar_left"}>
                     {/*
                         <div style={{height:"100px"}}>
                             <span className="photo"></span>
