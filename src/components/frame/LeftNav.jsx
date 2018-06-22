@@ -7,7 +7,7 @@ var Link = ReactRouter.Link;
 
 class Sider extends React.Component {
   handleClick(e) {
-    console.log('click ', e);
+    console.log('clickEvent ', e);
   }
   render() {
     return (
